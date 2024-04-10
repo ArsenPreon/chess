@@ -1,0 +1,12 @@
+@import "vars";
+
+button{
+    color: #fa003e;
+    cursor: pointer;
+    transition: all .6s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            transform: scale(1.08, 1.08);
+        }
+    }
+}

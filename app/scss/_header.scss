@@ -1,0 +1,44 @@
+@import 'icons';
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    &._scroll{
+        .header__wrapper{
+            background-color: #C7BBAB;
+            opacity: 0.9;
+        }
+        .header__body{
+            height: 80px;
+        }
+    }
+    &__wrapper {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        transition: all .7s ease 0s;
+    }
+
+    &__container {
+    }
+
+    &__body {
+        transition: all .7s ease 0s;
+        height: 62px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+&__logo {
+        img{
+            @media(max-width: $maxWidthContainer){
+                @include adaptive-width(246, 213);
+            };
+        }
+    }
+}
+
